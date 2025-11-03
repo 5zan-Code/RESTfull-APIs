@@ -10,7 +10,7 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static('public'))
 
-mongoose.connect('mongodb+srv://f97aizan:Faizan@cluster0.zhj3z.mongodb.net/wikiDB', {useNewUrlParser: true},()=>{
+mongoose.connect('<DB URL>', {useNewUrlParser: true},()=>{
     console.log('Database is connected!')
 })
 
